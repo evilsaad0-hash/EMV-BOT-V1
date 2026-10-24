@@ -35,3 +35,9 @@ Environment=PYTHONUNBUFFERED=1
 
 [Install]
 WantedBy=multi-user.target
+
+
+sudo systemctl daemon-reload
+sudo systemctl enable --now evm-bot
+sudo systemctl status evm-bot
+sudo systemctl restart evm-bot
